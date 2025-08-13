@@ -33,60 +33,7 @@ Decision Tree	1.03	1.73	0.848
 KNN	1.16	1.78	0.840
 Linear Regression	1.21	1.94	0.816
 
-📂 Project Structure
-bash
-Copy
-Edit
-student-success/
-│
-├── models/
-│   ├── kaggle_classifier.joblib
-│   ├── uci_regressor.joblib
-│
-├── streamlit_app.py        # Main app file
-├── requirements.txt        # Python dependencies
-├── README.md               # Project documentation
-└── .gitignore              # Ignore unnecessary files
-⚙️ Installation & Running
-1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/watkinsamya/student-success.git
-cd student-success
-2. Create Virtual Environment & Install Dependencies
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate        # Mac/Linux
-venv\Scripts\activate           # Windows
 
-pip install -r requirements.txt
-3. Run the App
-bash
-Copy
-Edit
-streamlit run streamlit_app.py
-4. Open in Browser
-Once running, open:
-
-arduino
-Copy
-Edit
-http://localhost:8501
-📊 How It Works
-Load Pre-Trained Models — Models are loaded from the models/ folder at startup.
-
-User Input — You enter student data into the UI.
-
-Prediction — The model processes the input and returns either:
-
-Risk Category (Kaggle dataset)
-
-Final Grade G3 (UCI dataset)
-
-Display Results — Output is shown directly in the web app.
 
 💡 Future Improvements
 Add personalized study recommendations.
